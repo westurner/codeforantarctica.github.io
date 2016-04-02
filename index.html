@@ -1,9 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Code for Antarctica</title>
+    <meta property="og:title"       content="Code for Antarctica 🐧" />
+    <meta property="og:image"       content="http://codeforantarctica.org/img/bg.jpg" />
+    <meta property="og:site_name"   content="Code for Antarctica 🐧" />
+    <meta property="og:description" content="🐧" />
+    <meta property="og:locale"      content="en_US" />
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="Code for Antarctica 🐧" />
+    <meta name="twitter:site"        content="@CodeForAmerica" />
+    <meta name="twitter:creator"     content="@mapmeld" />
+    <meta name="twitter:description" content="🐧" />
+    <meta name="twitter:image"       content="http://codeforantarctica.org/img/bg.jpg" />
+    <meta name="twitter:image:alt"   content="[ penguins ]" />
     <link rel="stylesheet" href="http://bootswatch.com/paper/bootstrap.min.css" type="text/css"/>
     <style type="text/css">
 .col-md-4 {
@@ -28,11 +40,13 @@ img {
 }
     </style>
   </head>
-  <body>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <meta property="primaryImageOfPage" content="http://codeforantarctica.org/img/bg.jpg" />
+    <meta property="description" content="🐧" />
     <div class="container">
       <div class="row">
         <div class="jumbotron">
-          <h1>Code for Antarctica 🐧</h1>
+          <h1 property="name">Code for Antarctica 🐧</h1>
           <h3>Civic Tech for the Bottom Billion</h3>
         </div>
       </div>
@@ -50,7 +64,7 @@ img {
               <strong>Adopt a Human</strong>
               The latest deployment of the Adopt-A platform: humans threatened by climate change
               <br/>
-              <img src="img/adopta.jpg"/>
+              <img property="image" src="img/adopta.jpg"/>
               <br/>
               With their poor camouflauge and ice diving skills, humans need all the help they can get.
             </li>
@@ -60,9 +74,9 @@ img {
           <h3>Penguins</h3>
           <a href="https://www.flickr.com/search/?text=penguins&license=7%2C9%2C10">Flickr search</a> for uncopyrighted penguin photos
           <br/>
-          <img src="img/penguin1.jpg"/>
+          <img property="image" src="img/penguin1.jpg"/>
           <br/>
-          <img src="img/penguin2.jpg"/>
+          <img property="image" src="img/penguin2.jpg"/>
         </div>
         <div class="col-md-4">
           <h3>Maps</h3>
@@ -70,19 +84,27 @@ img {
           <hr/>
           Most maps on the web today neglect to show Antarctica on top of the world. We can change that:
           <br/>
-          <img src="img/map.png"/>
+          <img property="image" src="img/map.png"/>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-md-offset-2">
           <hr/>
           <strong>Support our home</strong> by joining<br/>
-          <a class="btn btn-primary" href="https://github.com/CodeForAntarctica/codeforantarctica.github.io/issues">
+          <a class="btn btn-primary" href="https://github.com/CodeForAntarctica/codeforantarctica.github.io/issues"
+            property="significantLink">
             Code for Antarctica's GitHub
           </a>
           <br/>
           Include your preferred title.
           <br/>
+        </div>
+      </div>
+      <div style="display: none">
+        <b property="producer">mapmeld</b>
+
+        <div typeof="sourceOrganization">
+          <b property="name">CodeForAmerica</b>
         </div>
       </div>
     </div>
